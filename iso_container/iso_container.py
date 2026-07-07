@@ -55,11 +55,11 @@ def validate_container(container_number: str) -> bool:
     digits = container_number[4:-1]
     check_digit = container_number[-1]
 
-    if not letters.isalpha():
+    if not (letters.isascii() and letters.isalpha()):
         return False
-    if not digits.isdigit():
+    if not (digits.isascii() and digits.isdigit()):
         return False
-    if not check_digit.isdigit():
+    if not (check_digit.isascii() and check_digit.isdigit()):
         return False
 
     total = 0
@@ -67,7 +67,7 @@ def validate_container(container_number: str) -> bool:
         if char.isdigit():
             value = int(char)
         else:
-            value = WEIGHTS.get(char)
+            value = WEIGHTS[char]
         total += value * FACTORS[idx]
     comparison_total = (total // 11) * 11
 
