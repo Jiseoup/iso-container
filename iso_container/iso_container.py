@@ -6,6 +6,8 @@ Functions:
     - validate_container(container_number: str):
         Validates a container number using ISO 6346 standards.
 """
+from __future__ import annotations
+
 import json
 from pathlib import Path
 
