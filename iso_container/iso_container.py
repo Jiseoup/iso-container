@@ -69,9 +69,5 @@ def validate_container(container_number: str) -> bool:
         else:
             value = WEIGHTS[char]
         total += value * FACTORS[idx]
-    comparison_total = (total // 11) * 11
 
-    if total - comparison_total == int(check_digit):
-        return True
-    else:
-        return False
+    return total % 11 == int(check_digit)
