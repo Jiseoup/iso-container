@@ -31,12 +31,12 @@ def get_container_info(code: str) -> dict | None:
     """Retrieves container information by code.
 
     Args:
-        code (str): ISO Container code.
+        code (str): ISO Container code (case-insensitive).
 
     Returns:
         dict | None: Container information if found, otherwise None.
     """
-    return DATASETS.get(code)
+    return DATASETS.get(code.upper())
 
 
 def validate_container(container_number: str) -> bool:
