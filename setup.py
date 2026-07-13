@@ -10,7 +10,7 @@ setup(
 	long_description=long_description,
 	long_description_content_type = 'text/markdown',
 	description='A Python package for ISO 6346 container information and validation.',
-	author='Jiseoup',
+	author='JISUB LIM',
 	author_email='jseoup@gmail.com',
 	url='https://github.com/Jiseoup/iso-container',
 	license='MIT',
