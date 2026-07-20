@@ -2,6 +2,8 @@
 [![PyPI](https://img.shields.io/pypi/v/iso-container)](https://pypi.org/project/iso-container/)
 ![Python](https://img.shields.io/pypi/pyversions/iso-container)
 ![License](https://img.shields.io/pypi/l/iso-container)
+[![CI](https://github.com/Jiseoup/iso-container/actions/workflows/ci.yml/badge.svg)](https://github.com/Jiseoup/iso-container/actions/workflows/ci.yml)
+[![Downloads](https://static.pepy.tech/badge/iso-container)](https://pepy.tech/projects/iso-container)
 
 A Python package based on ISO 6346 Container Codes.  
 This package provides functionalities to search for container information using ISO codes and to validate container numbers.
